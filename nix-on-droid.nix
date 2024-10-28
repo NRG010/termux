@@ -11,11 +11,4 @@
   '';
 
   time.timeZone = "Asia/Kolkata";
-
-  home-manager = {
-    modules = [ ./home-manager ];
-    useGlobalPkgs = true;
-    stateVersion = "24.05";
-    backupFileExtension = "hm-bak";
-  };
 }
