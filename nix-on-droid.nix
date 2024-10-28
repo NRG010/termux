@@ -13,12 +13,9 @@
   time.timeZone = "Asia/Kolkata";
 
   home-manager = {
-    backupFileExtension = "hm-bak";
+    modules = [ ./home-manager ];
     useGlobalPkgs = true;
-    config = { config, lib, pkgs, ... }:
-    {
-      home.stateVersion = "24.05";
-      modules = [ ./home-manager ];
-    };
+    stateVersion = "24.05";
+    backupFileExtension = "hm-bak";
   };
 }
