@@ -17,8 +17,8 @@
     useGlobalPkgs = true;
     config = { config, lib, pkgs, ... }:
     {
-      ./home-manager;
       home.stateVersion = "24.05";
+      modules = [ ./home-manager ];
     };
   };
 }
