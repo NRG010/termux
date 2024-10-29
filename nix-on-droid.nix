@@ -6,7 +6,7 @@
 
     dejavu_fonts
     noto-fonts-emoji
-    pkgs.nerdfonts.override { fonts = [ "CascadiaCode" ]; };
+    pkgs.nerdfonts.override { fonts = [ "CascadiaCode" ]; }
   ];
 
   environment.etcBackupExtension = ".bak";
