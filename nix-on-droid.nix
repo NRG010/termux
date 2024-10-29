@@ -38,4 +38,11 @@
     backupFileExtension = "hm-bak";
     useGlobalPkgs = true;
   };
+
+  android-integration = {
+    termux-open.enable = true;
+    termux-setup-storage.enable = true;
+  };
+
+  user.shell = ${pkgs.fish}/bin/fish
 }
