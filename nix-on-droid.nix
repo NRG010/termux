@@ -3,7 +3,6 @@
   environment.packages = with pkgs; [
     git
     vim
-    fish
 
     #procps
     #killall
@@ -45,5 +44,5 @@
     termux-setup-storage.enable = true;
   };
 
-  user.shell = ${pkgs.fish}/bin/fish
+  user.shell = ${pkgs.fish}/bin/fish;
 }
