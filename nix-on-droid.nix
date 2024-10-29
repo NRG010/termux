@@ -35,7 +35,6 @@
 
   fontconfig = {
     defaultFonts = {
-      package = pkgs.;
       serif = "DejaVu Serif";
       sansSerif = "DejaVu Sans";
       monospace = "CaskaydiaCove Nerd Font Mono";
