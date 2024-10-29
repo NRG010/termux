@@ -4,9 +4,8 @@
     git
     vim
 
-    dejavu_fonts
-    noto-fonts-emoji
-    pkgs.nerdfonts.override { fonts = [ "CascadiaCode" ]; }
+    nerdfonts.override
+    { fonts = [ "CascadiaCode" ]; }
   ];
 
   environment.etcBackupExtension = ".bak";
@@ -33,15 +32,7 @@
 
   user.shell = "${pkgs.fish}/bin/fish";
 
-  fontconfig = {
-    defaultFonts = {
-      serif = "DejaVu Serif";
-      sansSerif = "DejaVu Sans";
-      monospace = "CaskaydiaCove Nerd Font Mono";
-      emoji = "Noto Color Emoji";
-    };
-  };
-
+  terminal.font = "${pkgs.nerdfonts}/bin/nerdfonts";
 
   terminal.colors = {
     background = "#1e1e2e";
