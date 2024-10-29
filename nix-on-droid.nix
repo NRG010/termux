@@ -3,6 +3,7 @@
   environment.packages = with pkgs; [
     git
     vim
+    fish
 
     #procps
     #killall
