@@ -4,8 +4,7 @@
     git
     vim
 
-    nerdfonts.override
-    { fonts = [ "CascadiaCode" ]; }
+    (nerdfonts.override { fonts = [ "CascadiaCode" ]; })
   ];
 
   environment.etcBackupExtension = ".bak";
@@ -32,6 +31,7 @@
 
   user.shell = "${pkgs.fish}/bin/fish";
 
+  fonts.fontconfig.enable = true;
   terminal.font = "${pkgs.nerdfonts}/bin/nerdfonts";
 
   terminal.colors = {
