@@ -4,23 +4,9 @@
     git
     vim
 
-    #procps
-    #killall
-    #diffutils
-    #findutils
-    #utillinux
-    #tzdata
-    #hostname
-    #man
-    #gnugrep
-    #gnupg
-    #gnused
-    #gnutar
-    #bzip2
-    #gzip
-    #xz
-    #zip
-    #unzip
+    dejavu_fonts
+    noto-fonts-emoji
+    pkgs.nerdfonts.override { fonts = [ "CascadiaCode" ]; };
   ];
 
   environment.etcBackupExtension = ".bak";
@@ -42,9 +28,21 @@
   android-integration = {
     termux-open.enable = true;
     termux-setup-storage.enable = true;
+    termux-reload-settings.enable = true;
   };
 
   user.shell = "${pkgs.fish}/bin/fish";
+
+  fontconfig = {
+    defaultFonts = {
+      package = pkgs.;
+      serif = "DejaVu Serif";
+      sansSerif = "DejaVu Sans";
+      monospace = "CaskaydiaCove Nerd Font Mono";
+      emoji = "Noto Color Emoji";
+    };
+  };
+
 
   terminal.colors = {
     background = "#1e1e2e";
