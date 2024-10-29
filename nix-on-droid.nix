@@ -1,7 +1,10 @@
 { config, lib, pkgs, ... }: {
 
   environment.packages = with pkgs; [
+    git
     vim
+
+    (nerdfonts.override { fonts = [ "CascadiaCode" ]; })
   ];
 
   environment.etcBackupExtension = ".bak";
@@ -27,6 +30,8 @@
   };
 
   user.shell = "${pkgs.fish}/bin/fish";
+
+  terminal.font = "${pkgs.nerdfonts}/share/fonts/truetype/CascadiaCode.ttf";
 
   terminal.colors = {
     background = "#1e1e2e";
