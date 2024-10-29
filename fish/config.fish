@@ -1,5 +1,6 @@
 # Yazi
-abbr dv = "yt-dlp -f \"bv*[height<=720]+ba/b[height<=720] / wv*+ba/w\""
+abbr da "ani-cli -d -q 720"
+abbr dv "yt-dlp -f \"bv*[height<=720]+ba/b[height<=720] / wv*+ba/w\""
 
 function yy
   set tmp (mktemp -t "yazi-cwd.XXXXXX")
