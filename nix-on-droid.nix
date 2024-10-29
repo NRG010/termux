@@ -31,9 +31,6 @@
 
   user.shell = "${pkgs.fish}/bin/fish";
 
-  fonts.fontconfig.enable = true;
-  terminal.font = "${pkgs.nerdfonts}/bin/nerdfonts";
-
   terminal.colors = {
     background = "#1e1e2e";
     foreground = "#cdd6f4";
