@@ -1,4 +1,4 @@
 #! /usr/bin/env bash
 
-pkg up -y
-pkg install ani-cli
+curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
+getnf -L
