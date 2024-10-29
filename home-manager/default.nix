@@ -22,7 +22,11 @@
     poppler
     imagemagick
     ffmpegthumbnailer
+
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
+
+  fonts.fontconfig.enable = true;
 
   programs = {
     jq.enable = true;

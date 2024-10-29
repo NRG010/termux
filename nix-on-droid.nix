@@ -1,10 +1,7 @@
 { config, lib, pkgs, ... }: {
 
   environment.packages = with pkgs; [
-    git
     vim
-
-    (nerdfonts.override { fonts = [ "CascadiaCode" ]; })
   ];
 
   environment.etcBackupExtension = ".bak";
