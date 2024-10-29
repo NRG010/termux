@@ -44,5 +44,5 @@
     termux-setup-storage.enable = true;
   };
 
-  user.shell = ${pkgs.fish}/bin/fish;
+  user.shell = "${pkgs.fish}/bin/fish";
 }
