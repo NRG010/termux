@@ -1,6 +1,7 @@
 { config, lib, pkgs, ... }: {
 
   environment.packages = with pkgs; [
+    git
     vim
 
     #procps
