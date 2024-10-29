@@ -1,4 +1,4 @@
 #! /usr/bin/env bash
 
-curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
-getnf -L
+
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaCode.zip
