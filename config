@@ -1,0 +1,16 @@
+--format "bv*[height<=720]+ba/b[height<=720] / wv*+ba/w"
+-P "$HOME/storage/Download/yt-dlp/"
+--sponsorblock-remove sponsor
+-o "%(title)s.%(ext)s"
+--restrict-filenames
+--video-multistreams
+--audio-multistreams
+--embed-info-json
+--embed-chapters
+--embed-metadata
+--lazy-playlist 
+--sub-langs en
+--write-subs
+--embed-subs
+--no-mtime
+--quiet

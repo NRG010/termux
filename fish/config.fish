@@ -2,8 +2,9 @@ abbr pr "pkg uninstall"
 abbr pu "pkg update -y"
 abbr pi "pkg install -y"
 
-alias da="ani-cli -d -q 720"
-alias dv="yt-dlp -f \"bv*[height<=720]+ba/b[height<=720] / wv*+ba/w\""
+#Download
+abbr dv "yt-dlp"
+abbr da "ani-cli -d -q 720 -e"
 
 # Yazi
 function yy

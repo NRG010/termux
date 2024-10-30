@@ -22,10 +22,12 @@ cd termux-yt-dlp
 
 bash install.sh
 
-cd -
+mv ../config yt-dlp
 
-rm -r termux-yt-dlp $HOME/font
-
-cd ../../usr/etc
+cd ../../../usr/etc
 
 rm -rf motd
+
+fish
+
+set -U fish_greeting
