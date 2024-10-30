@@ -6,7 +6,7 @@ termux-setup-storage
 
 pkg up -y
 
-pkg install neovim neofetch fish starship yazi ffmpegthumbnailer p7zip jq poppler fd ripgrep fzf zoxide imagemagick ani-cli ncurses-utils unzip -y
+pkg install neovim rust rust-analyzer neofetch fish starship yazi ffmpegthumbnailer p7zip jq poppler fd ripgrep fzf zoxide imagemagick ani-cli ncurses-utils unzip -y
 
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
 
@@ -22,12 +22,6 @@ cd termux-yt-dlp
 
 bash install.sh
 
-mv ../config yt-dlp
-
 cd ../../../usr/etc
 
 rm -rf motd
-
-fish
-
-set -U fish_greeting
