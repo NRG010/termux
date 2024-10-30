@@ -1,14 +1,12 @@
 #! /usr/bin/env bash
 
-pkg up -y
-
 termux-am
 
 termux-setup-storage
 
-pkg update
+pkg up -y
 
-pkg install fish starship yazi ffmpegthumbnailer p7zip jq poppler fd ripgrep fzf zoxide imagemagick ani-cli ncurses-utils unzip
+pkg install neovim neofetch fish starship yazi ffmpegthumbnailer p7zip jq poppler fd ripgrep fzf zoxide imagemagick ani-cli ncurses-utils unzip -y
 
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
 
@@ -24,4 +22,10 @@ cd termux-yt-dlp
 
 bash install.sh
 
-rm termux-yt-dlp
+cd -
+
+rm -r termux-yt-dlp $HOME/font
+
+cd ../../usr/etc
+
+rm -rf motd

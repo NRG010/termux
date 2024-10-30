@@ -6,6 +6,15 @@ show_symlink   = true
 scrolloff      = 5
 
 [opener]
+imv = [
+    { run = 'imv "$@"', orphan = true, for = "unix" },
+]
 edit = [
     { run = 'nvim "$@"', block = true, for = "unix" },
+]
+play = [
+    { run = 'mpv "$@"', orphan = true, for = "unix" },
+]
+zathura = [
+    { run = 'zathura "$@"', orphan = true, for = "unix" },
 ]

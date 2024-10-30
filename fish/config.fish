@@ -1,7 +1,11 @@
-# Yazi
-abbr da "ani-cli -d -q 720"
-abbr dv "yt-dlp -f \"bv*[height<=720]+ba/b[height<=720] / wv*+ba/w\""
+abbr pr "pkg uninstall"
+abbr pu "pkg update -y"
+abbr pi "pkg install -y"
 
+alias da="ani-cli -d -q 720"
+alias dv="yt-dlp -f \"bv*[height<=720]+ba/b[height<=720] / wv*+ba/w\""
+
+# Yazi
 function yy
   set tmp (mktemp -t "yazi-cwd.XXXXXX")
   yazi $argv --cwd-file="$tmp"
